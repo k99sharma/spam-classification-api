@@ -19,5 +19,5 @@ def predict(data: EmailRequest):
     except Exception as e:
         return ErrorResponse(
             message='Prediction failed',
-            error=e,
+            error=str(e),
         )
